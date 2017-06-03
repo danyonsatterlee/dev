@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+#nav-bar {
+  background-color: #115f6a;
+  color: white;
+}
+
+#nav-bar a {
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+#nav-bar a:hover {
+  color: rgb(248, 255, 168);
+}
+
+.nav-items {
+  list-style: none;
+  display: inline-block;
+  font-family: 'Khula', sans-serif;
+    line-height: auto;
+  float: right;
+}
+
+.nav-items li {
+  display: inline-block;
+  padding: 20px;
+}
+
+#nav-logo {
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 50px;
+  font-family: 'Lobster', cursive;
+}
+
+#nav-logo:hover {
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+body {
+  background-color: #ebece2;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 800px;
+  height: 800px;
+  margin: 20px auto;
+  background-color: #115f6a;
+  font-family: 'Khula', sans-serif;
+
+}
+
+h3 {
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.writing {
+  vertical-align: top;
+  width: 50%;
+  display: inline-block;
+  float: left;
+  padding: 0 20px 0 20px;
+  text-align: justify;
+}
+
+.side {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  vertical-align: top;
+  padding: 0 20px 0 20px;
+}
+
+.front-photo {
+  width: 20%;
+  height: auto ;
+  text-align: center;
+  -webkit-transition: width 2s, height 4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+  display: inline-block;
+}
+
+.front-photo:hover {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+p {
+  margin: 0;
+}
+
+.feet {
+  background-color: #115f6a;
+  color: white;
+  padding-top:20px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.feet p {
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 10px;
+  margin: auto 0;
+  text-transform: uppercase;
+  font-family: 'Khula', sans-serif;
+  line-height: 2px;
+
+}
+.feet a {
+color: white;
+
+}
+.feet a:hover {
+color: rgb(248, 255, 168);
+
+}
+
+.fa{
+  padding-left: 20px;
+  vertical-align: middle;
+}

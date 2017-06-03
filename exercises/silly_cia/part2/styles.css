@@ -1,0 +1,41 @@
+.gray{
+background:#f9fbfc;
+width:700px;
+margin: 0 auto;
+}
+
+h1{
+  font-weight: bold;
+  color: #0b670c;
+  text-align: center;
+  font-family: Georgia;
+}
+
+h2{
+  text-align: center;
+  font-weight: bold;
+  font-family: Georgia;
+}
+
+p{
+  line-height: 25px;
+}
+
+.cia{
+  float:left;
+  display: inline;
+  padding-right: 30px;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.capital{
+  text-transform: uppercase;
+}

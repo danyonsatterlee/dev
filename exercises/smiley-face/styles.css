@@ -1,0 +1,39 @@
+.box{
+background-color: orange;
+height: 600px;
+width: 600px;
+overflow: hidden;
+position: relative;
+}
+
+.circle{
+  display:inline-block;
+  background-color: white;
+  border: 2px solid white;
+  height:100px;
+  width: 100px;
+  border-radius: 100px;
+  margin:10px;
+
+}
+.right{
+  float:right;
+}
+
+
+.big-circle{
+  background-color: yellow;
+  border: 2px solid yellow;
+  height: 40%;
+  width: 80%;
+  border-radius: 0 0 90% 90%;
+  display: inline-block;
+  position: absolute;
+
+  margin: 0 0 0 10%;
+  bottom: 0;
+  /*-ms-transform: rotate(180deg); /* IE 9 */
+ /*-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */*/
+ /*transform: rotate(180deg);*/
+
+}

@@ -42,5 +42,40 @@ console.log(string("tralala boom de yeah! tralalalalalala"));
 //
 // }
 // Write a function to solve the quadratic equation. (It should accept three numbers as parameters, and then return an array with the resulting x values.)
-//
+function quad(a, b, c) {
+  if (a === 0) {
+    return ("this is linear");
+  } else {
+    // var x1 = -(b) + (Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
+    // var x2 = -(b) - (Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
+    var power = b*b //b*b
+    var second = (4 * a * c);
+    var insideSqr = power - second;
+    var sqr = (Math.sqrt(insideSqr));
+    // function (insideSqr) {
+    //   if (insideSqr > 0) {
+    //     (Math.sqrt(insideSqr));
+    //     return (sqr)
+    //
+    //   } else {
+    //     var positive = insideSqr * (-1);
+    //      (Math.sqrt(positive));
+    //      return (sqr)
+    //   }
+    // }
+
+      var bottom = (2 * a);
+      var divide = sqr / bottom;
+      var x1 = -b + divide;
+      var x2 = -b - divide;
+    var result = [x1, x2];
+    return (result);
+
+  }
+}
+console.log(quad(5, 5, 0));
+
+
+
+
 // Write a function that accepts a string as a parameter. Return the most frequently occuring letter in that string.

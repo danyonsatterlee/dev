@@ -44,6 +44,7 @@ console.log(string("tralala boom de yeah! tralalalalalala"));
 // Write a function to solve the quadratic equation. (It should accept three numbers as parameters, and then return an array with the resulting x values.)
 function quad(a, b, c) {
   var insideSqr = (b * b) - (4 * a * c);
+  
   if (a === 0) {
       return ("this is linear");
   } else if (insideSqr < 0) {
@@ -52,8 +53,8 @@ function quad(a, b, c) {
     var sqr = (Math.sqrt(insideSqr));
 
     var bottom = (2 * a);
-    var top1 = (-b) + insideSqr;
-    var top2 = (-b) - insideSqr;
+    var top1 = (-b) + sqr;
+    var top2 = (-b) - sqr;
     var x1 = top1/bottom;
     var x2 = top2/bottom;
     var result = [x1, x2];

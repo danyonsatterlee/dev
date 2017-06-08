@@ -1,0 +1,21 @@
+.nav{
+  background-color: rgb(249, 254, 249);
+  font-family:sans-serif;
+  color:white;
+
+}
+
+.nav li{
+  color: white;
+}
+
+
+a{
+  color: white !important;
+  text-decoration: none !important;
+}
+
+a:hover{
+  color: rgb(213, 209, 175);
+  text-decoration: none;
+}

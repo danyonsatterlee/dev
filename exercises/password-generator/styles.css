@@ -1,0 +1,36 @@
+.main{
+ background-color: #f9f6f7;
+ height:50vh;
+ padding-top: 5vh;
+ width: 100%;
+ min-height: 400px;
+
+}
+
+.other{
+  height:25vh;
+  width: 100%;
+}
+
+#result{
+  width:100%;
+  text-align: center;
+
+  font-size: 8vw;
+
+}
+
+#password{
+  width: 100%;
+}
+
+
+#char{
+  margin-top: 10vh !important;
+
+}
+
+.charlie{
+  height: 100vh;
+  width:220px;
+}

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- GOOGLE FONT -->
+  <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <title>Mario Pest Control</title>
@@ -22,6 +22,7 @@
 
     <h1 class="mario"> Mario Pest Control</h1>
   </nav>
+
   <div class="container">
     <div class="row">
 
@@ -38,40 +39,46 @@
 
     <!-- GOOBS -->
     <div class="row">
-  <!-- GOOMBA -->
+      <!-- GOOMBA -->
       <div class="col-md-4 text-center">
         <div class="pests">
           <h3 class="text-center mario"> Goombas</h3>
           <h4 class="text-center sub-heads">Goomba Cost: 5 Coins</h4>
           <img class="pest-img center-block smart-image" src="img/goob.png" alt="mario, nintendo">
+          <h5 class="text-center lil sub-heads"> Number of Goombas</h5>
+          <div class="center-block total mario" id="goomba-total"></div>
           <h5 class="text-center lil sub-heads"> Total Price for Goombas</h5>
-          <div class="vbottom center-block total" id="goomba-total"><p class="mario">0</p></div>
+          <div class=" center-block total mario total" id="goomba-price-total"></div>
         </div>
 
       </div>
 
 
 
-  <!-- BOB-OMBS -->
+      <!-- BOB-OMBS -->
       <div class="col-md-4  text-center">
         <div class="pests">
           <h3 class=" text-center mario"> Bob-ombs</h3>
           <h4 class="text-center sub-heads">Bob-ombs Cost: 7 Coins</h4>
           <img class="pest-img center-block pest-pad" src="img/bomb.png" alt="mario, nintendo">
+          <h5 class="text-center lil sub-heads"> Bob-ombs</h5>
+          <div class="  center-block total mario" id="bob-total"></div>
           <h5 class="text-center lil sub-heads"> Total Price for Bob-ombs</h5>
-          <div class="vbottom2 center-block total" id="bob-total"><p class="mario">0</p></div>
+          <div class="  center-block total mario" id="bob-price-total"></div>
         </div>
       </div>
 
 
-  <!-- CHEEP -->
+      <!-- CHEEP -->
       <div class="col-md-4 text-center">
         <div class="pests">
           <h3 class="text-center mario"> Cheep-cheeps</h3>
           <h4 class="text-center sub-heads">Cheep-cheeps Cost: 11 Coins</h4>
           <img class="pest-img center-block pest-pad" src="img/cheep.png" alt="mario, nintendo">
+          <h5 class="text-center lil sub-heads"> Cheep-cheeps</h5>
+          <div class="  center-block total mario" id="cheep-total"></div>
           <h5 class="text-center lil sub-heads"> Total Price for Cheep-cheeps</h5>
-          <div class="vbottom2 center-block total" id="cheep-total"><p class="mario">0</p></div>
+          <div class="  center-block total mario" id="cheep-price-total"></div>
         </div>
 
       </div>
@@ -82,45 +89,50 @@
         <p>To add coins to the total press the coorisponding button</p>
       </div>
     </div>
-    <!-- CONTROLLER -->
-    <div class="row center-block">
+  </div>
+  <!-- CONTROLLER -->
+  <div class="row ">
 
-      <div class=" col-sm-12 center-block">
-        <div class="handle">
-        <div class="controller">
-          <div class="left-bk">
-            <div class="left-circle">
+    <div class=" col-sm-12 ">
 
-                <i class="fa fa-plus fa-5x" aria-hidden="true"></i>
+      <div class="controller center-block text-center">
+        <div class="left-bk">
+          <div class="left-circle">
 
-            </div>
-          </div>
-          <div class="center-bk "></div>
-          <div class="right-bk">
-            <div class="right-circle">
-              <div class="bar">
-                <button class=" super-button"><p>G</p></button>
-                <button class="super-button"><p>B</p></button>
-              </div>
-              <div class="bar">
-                <button class="super-button"><p>C</p></button>
-                <button class="super-button"><p></p></button>
-              </div>
+            <i class="fa fa-plus fa-5x" aria-hidden="true"></i>
 
-
-                <i class="fa fa-plus fa-5x" aria-hidden="true"></i>
-
-            </div>
-
-            <div class="button2 ">
-
-            </div>
           </div>
         </div>
+        <div class="center-bk "></div>
+        <div class="right-bk">
+          <div class="right-circle">
+            <div class="bar">
+              <button id="goomba-go" class="green"><span class="center-block ">G</span></button>
+              <button id="bob-go" class=" blue"><span class="center-block ">B</span></button>
+            </div>
+            <div class="bottom-bar">
+              <button id="cheep-go" class=" yellow"><span class="center-block ">C</span></button>
+              <button id="reset" class="red"><span class="center-block ">R</span></button>
+            </div>
+
+
+
+
+          </div>
+
+          <div class="button2 ">
+
+          </div>
         </div>
       </div>
 
-
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="footer text-center">
+          <p>mario@mario-world.com | www.mariopests.com | 133 Luigi Ave. Mario City, Mario World</p>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -128,9 +140,9 @@
 
 
 
-  <footer class="footer ">
-    <p>Mario</p>
-  </footer>
+
+
+
 
 
 

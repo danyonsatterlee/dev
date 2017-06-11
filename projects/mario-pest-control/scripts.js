@@ -15,7 +15,7 @@ var bobCoins = 7;
 var cheepCoins = 11;
 var bobTotal=0;
 var cheepTotal = 0;
-var moneyGoomba = goombaTotal * goombaCoins;
+var moneyGoomba = 0;
 
 function goomba() {
   document.getElementById('goomba-go').addEventListener("click", function() {
@@ -41,7 +41,7 @@ document.getElementById('pest-img-goob').classList.toggle('pulse');
     (moneyCheep);
 
   })
-  // document.getElementById('grand-total-go').innerHTML= moneyGoomba;
+
 
 
 

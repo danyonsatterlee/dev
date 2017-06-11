@@ -1,5 +1,12 @@
 
-
+ window.onload= function(e){
+  document.getElementById("goomba-total").innerHTML = 0;
+  document.getElementById("bob-total").innerHTML = 0;
+  document.getElementById("cheep-total").innerHTML = 0;
+  document.getElementById("goomba-price-total").innerHTML = 0;
+  document.getElementById("bob-price-total").innerHTML = 0 ;
+  document.getElementById("cheep-price-total").innerHTML = 0;
+}
 
 var goombaCoins = 5;
 
@@ -14,6 +21,7 @@ function goomba() {
   document.getElementById('goomba-go').addEventListener("click", function() {
     goombaTotal++
 
+document.getElementById('pest-img-goob').classList.toggle('pulse');
     document.getElementById('goomba-total').innerHTML = goombaTotal;
     var moneyGoomba = goombaTotal * goombaCoins;
     document.getElementById('goomba-price-total').innerHTML = moneyGoomba;

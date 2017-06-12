@@ -19,7 +19,7 @@ body {
   padding-bottom: 10px;
 }
 
-.total-box {}
+
 
   .background {
     width: 100%;
@@ -266,7 +266,22 @@ body {
     top: 6vh;
   }
 
+@media (max-width: 736px) {
+  .center-bk{
+    display:none;
+  }
+  .left-bk{
+    display:none;
+  }
+  .left-circle{
+    display:none;
+  }
+  .fa{
+    display:none;
+  }
 
+
+}
 
   .red:focus {
     outline: none;
@@ -295,7 +310,11 @@ body {
 
     font-family: 'Roboto', sans-serif !important;
     text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .4em;
   }
+
+
 
   @keyframes pulse {
     from {

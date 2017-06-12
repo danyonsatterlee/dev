@@ -34,57 +34,55 @@ document.getElementById('goomba-go').addEventListener("mousedown", function() {
 
 var bob = function() {
   bobTotal++
-    document.getElementById('pest-img-bob').classList.add('pulse');
+  document.getElementById('pest-img-bob').classList.add('pulse');
   document.getElementById('bob-total').innerHTML = bobTotal;
   moneyBob = bobTotal * bobCoins;
   document.getElementById('bob-price-total').innerHTML = moneyBob;
 }
 document.getElementById('bob-go').addEventListener("mouseup", bob);
-  document.getElementById('bob-go').addEventListener("mousedown", function() {
-    document.getElementById('pest-img-bob').classList.remove('pulse');
+document.getElementById('bob-go').addEventListener("mousedown", function() {
+  document.getElementById('pest-img-bob').classList.remove('pulse');
+})
+
+var cheep = function() {
+  cheepTotal++
+  document.getElementById('pest-img-cheep').classList.add('pulse');
+  document.getElementById('cheep-total').innerHTML = cheepTotal;
+  moneyCheep = cheepTotal * cheepCoins;
+  document.getElementById('cheep-price-total').innerHTML = moneyCheep;
+}
+document.getElementById('cheep-go').addEventListener("mouseup", cheep);
+document.getElementById('cheep-go').addEventListener("mousedown", function() {
+  document.getElementById('pest-img-cheep').classList.remove('pulse');
+})
+
+
+
+//
+var total = document.getElementsByClassName('go');
+for (var i = 0; i < total.length; i++) {
+  total[i].addEventListener("click", function() {
+    document.getElementById('grand-total').innerHTML = Number.parseInt(moneyGoomba + moneyBob + moneyCheep);
   })
-
-  var cheep = function() {
-      cheepTotal++
-    document.getElementById('pest-img-cheep').classList.add('pulse');
-
-
-      document.getElementById('cheep-total').innerHTML = cheepTotal;
-      moneyCheep = cheepTotal * cheepCoins;
-document.getElementById('cheep-price-total').innerHTML = moneyCheep;
-    }
-    document.getElementById('cheep-go').addEventListener("mouseup", cheep);
-      document.getElementById('cheep-go').addEventListener("mousedown", function() {
-        document.getElementById('pest-img-cheep').classList.remove('pulse');
-      })
-
-
-
-  //
-  var total = document.getElementsByClassName('go');
-  for (var i = 0; i < total.length; i++) {
-    total[i].addEventListener("click", function() {
-      document.getElementById('grand-total').innerHTML = Number.parseInt(moneyGoomba + moneyBob + moneyCheep);
-    })
-  };
+};
 
 
 
 
-  var total = document.getElementsByClassName('go');
-  for (var i = 0; i < total.length; i++) {
-    total[i].addEventListener("click", function() {
-      document.getElementById('grand-total').innerHTML = Number.parseInt(moneyGoomba + moneyBob + moneyCheep);
-    })
-  };
+var total = document.getElementsByClassName('go');
+for (var i = 0; i < total.length; i++) {
+  total[i].addEventListener("click", function() {
+    document.getElementById('grand-total').innerHTML = Number.parseInt(moneyGoomba + moneyBob + moneyCheep);
+  })
+};
 
 
-  document.getElementById("reset").addEventListener("click", function() {
-    document.getElementById("cheep-total").innerHTML = (cheepTotal = 0);
-    document.getElementById("cheep-price-total").innerHTML = (moneyCheep = 0);
-    document.getElementById("bob-total").innerHTML = (bobTotal = 0);
-    document.getElementById("bob-price-total").innerHTML = (moneyBob = 0);
-    document.getElementById("goomba-total").innerHTML = (goombaTotal = 0);
-    document.getElementById("goomba-price-total").innerHTML = (moneyBob = 0);
-    document.getElementById("grand-total").innerHTML = (grandTotal = 0);
-  });
+document.getElementById("reset").addEventListener("click", function() {
+  document.getElementById("cheep-total").innerHTML = (cheepTotal = 0);
+  document.getElementById("cheep-price-total").innerHTML = (moneyCheep = 0);
+  document.getElementById("bob-total").innerHTML = (bobTotal = 0);
+  document.getElementById("bob-price-total").innerHTML = (moneyBob = 0);
+  document.getElementById("goomba-total").innerHTML = (goombaTotal = 0);
+  document.getElementById("goomba-price-total").innerHTML = (moneyBob = 0);
+  document.getElementById("grand-total").innerHTML = (grandTotal = 0);
+});

@@ -11,12 +11,12 @@ var forward = directions[2];
 var backward = directions[3];
 ///CENTER OF ROOM
 var centerOfRoom = function() {
-  var where = readlineSync.question('Take a look around, ' + userName + '. Where do you want to look first? ' + directions + "?");
+  var where = readlineSync.question('Take a look around, ' + userName + '. Where do you want to look first? ' + directions[0], directions[1]+ "?");
   if (where===left) {
-    console.log("You're now on the left side of the room ");
+    console.log("Oh Look a door!");
     leftofRoom();
   } else if (where===right) {
-    console.log("You're now on the right side of the room ");
+    console.log("mmm the door is cooler. Let's Go to the door.");
     rightofRoom();
   }
 } else if (where===forward) {

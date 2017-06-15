@@ -27,7 +27,7 @@ while (true) {
     drink = true;
 
   } else if (input.includes("door") && input.includes("open") && (drink===true)) {
-    console.log("You made it! Let us go play some crochet!");
+    console.log("You made it! Let us go play some croquet!");
     break;
   } else if (input.includes("door") && input.includes("open") && (drink===false)) {
     printRoom();

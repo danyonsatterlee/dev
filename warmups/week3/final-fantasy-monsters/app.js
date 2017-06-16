@@ -1,6 +1,3 @@
-
-
-
 var type = function() {
   var monsters = ["Ancient Dragon", "Prowler", "Mighty Grunt"];
   return monsters[Math.floor(Math.random() * monsters.length)];
@@ -51,23 +48,15 @@ var Monster = function() {
 
 };
 
-var myEnemy = new Monster();
 
-// console.log(myEnemy);
 
-// var loop = function(){
-// while(loops <3){
-// loops++;
-// console.log("I'm looping!");
-// }
-// };
-// loop();
+var hundredMonsters = function() {
+  var monsterArr = [];
+  for (var i = 1; i <= 100; i++) {
+    monsterArr.push(new Monster())
 
-var hundredMonsters = function(){
-
-  for (var i=1; i<=100; i++){
-    console.log(new Monster());
-  } return "those are your enemies!"
+  }
+  console.log(monsterArr);
 };
 
-console.log(hundredMonsters());
+hundredMonsters();

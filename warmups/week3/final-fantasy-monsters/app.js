@@ -53,4 +53,21 @@ var Monster = function() {
 
 var myEnemy = new Monster();
 
-console.log(myEnemy);
+// console.log(myEnemy);
+
+// var loop = function(){
+// while(loops <3){
+// loops++;
+// console.log("I'm looping!");
+// }
+// };
+// loop();
+
+var hundredMonsters = function(){
+
+  for (var i=1; i<=100; i++){
+    console.log(new Monster());
+  } return "those are your enemies!"
+};
+
+console.log(hundredMonsters());

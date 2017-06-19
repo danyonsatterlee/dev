@@ -36,37 +36,35 @@
 //
 // console.log(menuArray);
 
-var breakfast= document.getElementById("breakfast");
+var breakfast = document.getElementById("breakfast");
 var drinks = document.getElementById("beverage");
 
-var addItem = function (name, side, price,divName){
-  var item= document.createElement("div");
-//title
-  var title =document.createElement("h4");
-  title.innerHTML= name;
+var addItem = function(name, side, price, divName) {
+  var item = document.createElement("div");
+  //menu item name
+  var title = document.createElement("h4");
+  title.innerHTML = name;
   item.appendChild(title);
-
+  //price
   var priceElem = document.createElement("p");
-  priceElem.innerHTML= "$ "+ price;
+  priceElem.innerHTML = "$ " + price;
   priceElem.setAttribute("class", "pull-right");
-
   item.appendChild(priceElem);
-
-  var sideElem =document.createElement("p");
-sideElem.innerHTML= side.join(", ");
-
+  // side or description
+  var sideElem = document.createElement("p");
+  sideElem.innerHTML = side.join(", ");
   item.appendChild(sideElem);
-
-divName.appendChild(item);
+// adding it into the proper div of either breakfast or drinks
+  divName.appendChild(item);
 };
 
 
 
-addItem("Flap-Jacks", ["pancakes","bacon","eggs sunny side up"], 7 , breakfast);
+addItem("Flap-Jacks", ["pancakes", "bacon", "eggs sunny side up"], 7, breakfast);
 addItem("Sunrise Breakfast", ["2 pancakes", "sausage", "bacon", "hashbrowns"], 10, breakfast);
-addItem("Egg-tastic", ["ommlette","green peppers","tomatoe", "cheddar cheese", "choice of sausage or bacon"], 7 , breakfast);
+addItem("Egg-tastic", ["ommlette", "green peppers", "tomatoe", "cheddar cheese", "choice of sausage or bacon"], 7, breakfast);
 addItem("Waffle Haven", ["1 belgium waffle", "whip cream", "maple syrup", "choice of in season fruit topping"], 10, breakfast);
 
-addItem("Cup 'o Joe", ["the staple cup of coffee", "free refills"], 2 , drinks);
+addItem("Cup 'o Joe", ["the staple cup of coffee", "free refills"], 2, drinks);
 addItem("Juice", ["large or small", "orange", "apple", "grape", "guave"], 2, drinks);
-addItem("Tea", ["English Breakfast","Peppermint","Chai", "Green"], 2 , drinks);
+addItem("Tea", ["English Breakfast", "Peppermint", "Chai", "Green"], 2, drinks);

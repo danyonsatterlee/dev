@@ -1,0 +1,54 @@
+body{
+  background-image: url(tile.jpg);
+  background-repeat: repeat;
+}
+
+.menu-bk{
+  background-color: rgb(247, 247, 247);
+  margin-top: 2em;
+  -webkit-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.68);
+-moz-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.68);
+box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.68);
+}
+h1{
+  font-family: 'Cherry Cream Soda', cursive !important;
+  color:rgb(218, 82, 73) !important;
+
+  border-style: solid;
+  border-color: rgb(218, 82, 73);
+  border-width: 4px;
+  border-radius: 100px;
+  padding: 1em;
+}
+
+h2{
+  font-family: 'Cherry Cream Soda', cursive !important;
+  color:rgb(218, 82, 73) !important;
+
+
+
+}
+h3{
+  font-family: 'Cherry Cream Soda', cursive !important;
+  color:rgb(218, 82, 73) !important;
+
+  border-style: solid;
+  border-color: rgb(218, 82, 73);
+  border-width: 4px;
+  border-radius: 100px;
+  padding: .3em;
+}
+h4{
+  font-family: 'Cherry Cream Soda', cursive !important;
+  color:rgb(218, 82, 73) !important;
+}
+p{
+  display: inline;
+  text-decoration: none;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+
+.right{
+  float:right;
+}

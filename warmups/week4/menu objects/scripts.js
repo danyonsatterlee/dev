@@ -17,15 +17,16 @@
 //   portions: ["small", "large"]
 // };
 //
-// var MainDishes= function (dish, side, cost){
-//   this.dish=dish;
-//   this.side=side;
-//   this.cost=cost;
-//   this.print=function(){
-//     console.log("I will have the " + this.dish+" with a side of " +this.side +" and " +this.cost+ " to drink.");
-//   }
-// }
-// var menuArray=[];
+var MainDishes= function (dish, side, cost){
+  this.dish=dish;
+  this.side=side;
+  this.cost=cost;
+
+  this.print=function(){
+    console.log("I will have the " + this.dish+" with a side of " +this.side +" and " +this.cost+ " to drink.");
+  }
+}
+var menuArray=[];
 // var biscuitsGravy = new MainDishes("biscuits and gravy", "hashbrowns", 5);
 // var dailySpecial = new MainDishes("pancakes", ["bacon","eggs"], 7);
 // var waffles = new MainDishes ("waffles", "bacon", 7);

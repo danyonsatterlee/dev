@@ -1,0 +1,43 @@
+body{
+  background-color: black;
+}
+.wrapper{
+  display: flex;
+  flex-direction:column;
+
+   justify-content: center;
+  align-items: center;
+}
+
+.box{
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  margin: 10px;
+  border-radius: 0px;
+
+  transition: color .03s ease-in, border-radius .5s ease-in, height 2s ease-in, width 2s ease-in, transform 1s;
+
+}
+
+.box-change{
+
+  border-radius: 100px;
+
+
+
+}
+
+.box-height{
+  height: 500px;
+  width:500px;
+  border-radius: 50px;
+   transform: rotate(720deg);
+
+
+}
+
+audio{
+  display: none;
+  
+}

@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  height: 100vh;
+width: 100%;
+background-color: rgb(221, 97, 89);
+color:rgb(219, 152, 148);
+flex-direction:column;
+justify-content: center;
+/* justify-content: space-around; */
+align-items: center;
+}
+
+h1{
+  font-size: 6em;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+
+#time{
+padding: 10px;
+  width: 30%;
+  background-color:rgb(158, 68, 62);
+  border: 2px solid beige;
+  color:rgb(219, 152, 148);
+  font-size: 5em;
+  font-family: sans-serif;
+  text-align: center;
+}

@@ -1,0 +1,55 @@
+{
+  "breakfast": [
+    {
+      "price": 8,
+      "name": "colossus",
+      "ing": ["cheese","egg","bacon", "siracha"]
+    },
+    {
+      "price": 10,
+      "name": "avacado dream",
+      "ing": ["avacado","scrambled egg","bacon", "peppers"]
+    },
+    {
+    "price": 9,
+    "name": "pancake heavan",
+    "ing": ["four pancakes","hashbrowns","whipcream", "fruit"]
+    }
+
+  ],
+  "lunch": [
+    {
+      "price": 12,
+      "name": "french dip",
+      "ing": ["roast beef","au jus","fries"]
+
+    },
+    {
+      "price": 10,
+      "name": "on the ligher side",
+      "ing": ["greens","hummus","veggies"]
+    },
+    {
+      "price": 13,
+      "name": "the black and blue",
+      "ing": ["burger", "blue cheese", "mushrooms"]
+    }
+  ],
+  "dinner": [
+    {
+      "price": 15,
+      "name": "new york steak",
+      "ing": ["steak","baked potatoe", " side salad salad", "soup"]
+    },
+    {
+    "price": 14,
+    "name": "veggie pasta",
+    "ing": ["alfredo","angel hair pasta","veggies", "side salad"]
+  },{
+    "price": 18,
+    "name": "lobster rolls",
+    "ing": ["lobster"," side-salad","fries" ]
+  }
+
+  ]
+}

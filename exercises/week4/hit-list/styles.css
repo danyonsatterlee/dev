@@ -1,0 +1,20 @@
+.hit-box{
+  height: 500px;
+  /*background-color: purple;*/
+  width:100%;
+  position: relative;
+
+}
+
+.hit-img{
+background-size: cover;
+background-position: center;
+}
+
+.name{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  background-color:blue;
+  text-align:center;
+}

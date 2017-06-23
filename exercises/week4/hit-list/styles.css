@@ -1,3 +1,8 @@
+
+.bk{
+  background-color: black;
+}
+
 .hit-box{
   height: 500px;
   /*background-color: purple;*/
@@ -13,8 +18,16 @@ background-position: center;
 
 .name{
   position: absolute;
-  bottom:0;
+  bottom: 0;
   width: 100%;
-  background-color:blue;
+  background-color:rgba(184, 97, 88, 0.73);
   text-align:center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+
+.don{
+  max-width: 100px;
+  float:right;
 }

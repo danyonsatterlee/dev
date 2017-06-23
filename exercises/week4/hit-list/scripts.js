@@ -1,10 +1,10 @@
 var addVictim = function(image, name) {
 
-  var contain = document.createElement("div");
-  contain.setAttribute("class", "container");
+  // var contain = document.createElement("div");
+  // contain.setAttribute("class", "container");
 
-  var firstRow = document.createElement("div");
-  firstRow.setAttribute("class", "row");
+  // var firstRow = document.createElement("div");
+  // firstRow.setAttribute("class", "row");
 
   var hitHolders = document.createElement("div");
   hitHolders.setAttribute("class", "col-md-4");
@@ -28,10 +28,10 @@ var addVictim = function(image, name) {
 
   hitBox.appendChild(nameVictim);
   hitHolders.appendChild(hitBox);
-  firstRow.appendChild(hitHolders);
-  contain.appendChild(firstRow);
+  // firstRow.appendChild(hitHolders);
+  // contain.appendChild
 
-  document.querySelector("#contain").appendChild(contain);
+  document.querySelector("#first-row").appendChild(hitHolders);
 };
 
 // addVictim();

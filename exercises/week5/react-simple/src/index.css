@@ -1,6 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  
+
+}
+
+.navbar{
+  color: black;
+  background-color: (255, 255, 255, 0.55);
+}
+
+.navbar li{
+  text-transform: uppercase;
+  padding-left: 30px;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  display: inline;
+
+
+}
+
+
+header{
+  background-image: url("./img/home.jpg");
+  height: 600px;
+    text-align: center;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+header h1{
+  font-weight: 700 !important;
+  font-size: 8em;
+  letter-spacing: -6px;
+
+}
+
+header h2{
+
+  font-size: 2em;
+}
+
+#white-line{
+  text-align: center;
+  height:5px;
+  width:100px;
+  background-color: white;
+}
+
+.awesome{
+  text-align: center;
 }

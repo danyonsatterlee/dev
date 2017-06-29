@@ -29,10 +29,13 @@ h3 {
 
 header{
   background-image: url("./img/home.jpg");
+  background-position: center;
   height: 600px;
-    text-align: center;
-    color:white;
-    font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+  z-index: -1;
+  
 
 
 }

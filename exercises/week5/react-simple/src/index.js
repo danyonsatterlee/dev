@@ -14,7 +14,12 @@ class App extends React.Component{
     return(
 
       <div>
-        <Navbar />
+        <Navbar
+        //   links=[ "Home",
+        // "About",
+        // "Sample Post",
+        // "Contact"]
+        />
         <Header />
         <Articles paragraphs={[
             {

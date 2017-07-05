@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import CounterContainer from "./containers/counter-container.js";
+
+import BoxContainer from "./containers/box.js";
 class App extends React.Component{
     render(){
         return(
-<div>
-    <CounterContainer></CounterContainer> 
-</div>
+<BoxContainer></BoxContainer>
         );
     }
 }

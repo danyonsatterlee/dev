@@ -10,11 +10,7 @@ class CounterContainer extends React.Component{
         this.down = this.down.bind(this);
         this.reset=this.reset.bind(this);
     }
-    reset(n){
-        this.setState({
-            counter: n
-        });
-    }
+  
     up(){
        
         this.setState({

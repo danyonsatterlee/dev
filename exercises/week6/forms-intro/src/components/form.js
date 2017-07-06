@@ -1,8 +1,9 @@
 import React from "react";
 
 class Form extends React.Component{
-    componentWillMount() {
-        this.nameListItem = this.props.names.map((item,index) => {
+
+    genNames(){
+                this.nameListItem = this.props.names.map((item,index) => {
             return(
             <li key={item+index}>
                 {item}
@@ -11,12 +12,13 @@ class Form extends React.Component{
         });
 
     }
+
     render(){
-        
+        this.genNames();
 return(
 <div >
     <h1>{this.props.brand}</h1>
-    <input></input>
+    <input value={this.props.nameValue} onChange={this.props.handleInput}></input>
     <button onClick={ ()=>{
         this.props.submitHandler()
     }}>Submit</button>

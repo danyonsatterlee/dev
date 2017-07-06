@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url('./chicago.jpg') no-repeat fixed center;
+}
+
+
+.btn-custom{
+  border-radius:45px;
+}
+
+h1{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.list{
+  width: 100%;
+  height:50vh;
+  background-color: white;
+  
+}

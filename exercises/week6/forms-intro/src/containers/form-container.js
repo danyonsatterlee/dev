@@ -29,11 +29,22 @@ submit(){
     })
     
 }
+handleRemove(index){
+    let oldNames=[...this.state.names];
+    oldNames.splice(index,1);
+    this.setState({
+        ...this.state,
+        names: oldNames
+    })
+
+
+}
     render(){
         return(
 
-    <Form brand="My App" nameValue={this.state.nameValue} handleInput={this.handleInput} names={this.state.names} submitHandler={this.submit}></Form>
- 
+      
+    <Form handleRemove={this.handleRemove} brand="Help Stop This Important Issue" nameValue={this.state.nameValue} handleInput={this.handleInput} names={this.state.names} submitHandler={this.submit}></Form>
+
         );
     }
 }

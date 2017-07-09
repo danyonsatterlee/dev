@@ -5,7 +5,7 @@ class ToDoBox extends React.Component{
         return(
   
   
-  <div className="list text-center"></div>
+  
         )
     }
 }

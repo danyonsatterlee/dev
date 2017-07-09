@@ -17,7 +17,7 @@ class Form extends React.Component{
         this.genNames();
 return(
  <div >
-    <h1  >{this.props.brand}</h1>
+    <h1> {this.props.brand}</h1>
    <h4>sign below</h4>
     <input className="input-lg" value={this.props.nameValue} onChange={this.props.handleInput}></input>
     <button className="btn-warning btn-lg"  onClick={ ()=>{

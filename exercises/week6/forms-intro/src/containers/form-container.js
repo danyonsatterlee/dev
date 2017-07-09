@@ -26,7 +26,7 @@ submit(){
     this.setState({
         ...this.state,
         names:[...this.state.names, this.state.nameValue]
-    })
+    });
     
 }
 handleRemove(index){
@@ -35,7 +35,7 @@ handleRemove(index){
     this.setState({
         ...this.state,
         names: oldNames
-    })
+    });
 
 
 }

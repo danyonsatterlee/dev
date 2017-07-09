@@ -1,13 +1,31 @@
 import React from "react";
-import ToDoBox from "./list-div.js"
+
 class ToDoFeatures extends React.Component{
+    genToDo(){
+        return this.props.toDo.map((item,index) => {
+            return(
+<li onClick ={ () => {this.props.handleRemove(index)}} key={item+index}>
+    {item}
+</li>
+            );
+
+        });
+    } 
     render(){
+       
         return(
 <div className="text-center">
-    <input></input>
-    <button className="btn-danger btn-md btn-custom">add</button>
-  <ToDoBox></ToDoBox>
+    <input value ={this.props.toDoValue} onChange={this.props.handleInput}></input>
     
+    <button className="btn-danger btn-md btn-custom" onClick={ ()=>{
+        this.props.handleSubmit()}}>add</button>
+
+    <div className="list text-center">
+        <ul>
+            {this.genToDo()}
+            
+        </ul>
+    </div>
     
 </div>
         );

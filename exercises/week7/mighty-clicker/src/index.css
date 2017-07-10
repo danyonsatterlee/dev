@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.red{
+  background-color: red;
+  height:100px;
+  width:100px;
+  display:inline-block;
+  border-radius: 100%;
+
+}
+
+.blue{
+  background-color:blue;
+    height:100px;
+  width:100px;
+  border-radius: 100%;
+   display:inline-block;
+
+}
+
+.main{
+ 
+  width:100%;
+  text-align: center;
+}

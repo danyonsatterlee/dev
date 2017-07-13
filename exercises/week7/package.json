@@ -8,5 +8,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "react-autobind": "^1.0.6",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2"
+  }
 }

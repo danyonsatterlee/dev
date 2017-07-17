@@ -4,12 +4,20 @@ class InputNames extends React.Component {
     render() {
         return (
             <div>
-                <input value={this.props.info.name1} placeholder="name one"></input>
-                <input value={this.props.info.name2} placeholder="name two"></input>
-                <input  value={this.props.info.name3} placeholder="name three"></input>
+                <input  
+                onChange={ (event) => {
+                this.props.handleChange("name1",event)} }
+                placeholder="name one"></input>
+                <input 
+                 onChange={ (event) => {
+                this.props.handleChange("name2",event)} }
+                 placeholder="name two"></input>
+                <input  onChange={ (event) => {
+                this.props.handleChange("name3",event)} }
+                 placeholder="name three"></input>
             
                 <button onClick={ ()=> {
-             this.props.handleClick(this.props.info);
+            this.props.handleClick([this.props.info.name1, this.props.info.name2,this.props.info.name3])
              }
 
          }>Choose!</button>

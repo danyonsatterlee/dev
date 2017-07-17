@@ -15,6 +15,7 @@ class InputCon extends React.Component {
             name1: "",
             name2: "",
             name3: ""
+         
 
         };
 
@@ -23,6 +24,7 @@ class InputCon extends React.Component {
     let stateCopy={...this.state};
     stateCopy[key]=event.target.value;
     this.setState(stateCopy);
+    console.log(event.target.value);
 }
     render() {
         return (

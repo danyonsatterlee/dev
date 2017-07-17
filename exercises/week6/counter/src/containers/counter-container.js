@@ -8,7 +8,7 @@ class CounterContainer extends React.Component{
         this.state = {counter:0};
         this.up = this.up.bind(this);
         this.down = this.down.bind(this);
-        this.reset=this.reset.bind(this);
+       
     }
   
     up(){

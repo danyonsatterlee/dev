@@ -1,16 +1,18 @@
  let defaultState={
-  names: [],
-  result: ""
+ uglyInfo: []
 }
 
 
 const mainReducer = (state =defaultState,action) => {
-    if(action.type==="PICK_NAME"){
+    if(action.type==="SUBMIT_UGLY"){
         ////put function stuff here
-    let result=action.names[Math.floor(Math.random()*action.names.length)];
+        console.log(state.uglyInfo);
+        console.log(action.uglyInfo);
+  
         return{
             ...state,
-            result:result,
+            uglyInfo: [...state.uglyInfo, action.uglyInfo]
+    
 
         }
     } else{

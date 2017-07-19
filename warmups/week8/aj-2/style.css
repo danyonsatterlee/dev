@@ -1,0 +1,21 @@
+body{
+    background-color: pink;
+}
+
+#search{
+    text-align:center;
+}
+
+.search{
+    width:100%;
+    text-align:center;
+
+}
+
+p{
+    color: papayawhip;
+}
+
+h3{
+    color:plum;
+}

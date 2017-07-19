@@ -8,7 +8,7 @@ import {createStore} from "redux";
 //this gets the reducer to handle state
 import reducers from "./reducers";
 //make the store
-import ListCon from './containers/list-container.js';
+import PostCon from './containers/post-container.js';
 import FormCon from './containers/form-container.js';
 const store = createStore(reducers);
 class App extends React.Component{
@@ -20,7 +20,7 @@ class App extends React.Component{
     <h1 className="text=center title-page" >Burn Book of Ugly Things</h1>
     </div>
       <FormCon/>
-    <ListCon/>
+    <PostCon/>
   
 </div>
         );

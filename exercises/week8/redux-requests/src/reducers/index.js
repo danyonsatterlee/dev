@@ -1,24 +1,28 @@
 let defaultState = {
-   color: "red"
+    color: "red"
 }
 
 const mainReducer = (state = defaultState, action) => {
     if (action.type === "CHANGE_COLOR") {
-  
-// let newColor=document.getElementsByClassName("color-me").style.backgroundColor="blue";
-        return {
-            ...state,
-            color: "blue"
-        
+        if (action.color === "#") {
+            return {
+                ...state,
+                color: "red"
+            }
 
+        } else {
+            return {
+                ...state,
+                color: action.color
+
+            }
         }
-  
-    } else {
-        return {
-            ...state
+        } else {
+            return {
+                ...state
+            }
         }
+
     }
 
-}
-
-export default mainReducer;
+    export default mainReducer;

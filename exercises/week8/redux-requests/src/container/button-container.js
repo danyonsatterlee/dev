@@ -1,5 +1,5 @@
 import React from "react";
-import autoBind from 'react-autobind';
+
 import { connect } from "react-redux";
 import { bindActionCreators} from "redux";
 import * as actionCreators from "../actions/";
@@ -18,7 +18,7 @@ class ButtonCon extends React.Component{
     // };
     render(){
         return(
-          <Button handleClick={this.props.changeColor} color={this.props.color}></Button>
+          <Button handleClick={this.props.loadColor} color={this.props.color}></Button>
         );
     }
 }

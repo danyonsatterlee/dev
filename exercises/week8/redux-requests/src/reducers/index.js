@@ -1,14 +1,14 @@
 let defaultState = {
-    color: "red"
+   color: "red"
 }
 
 const mainReducer = (state = defaultState, action) => {
     if (action.type === "CHANGE_COLOR") {
   
-let newColor=document.getElementsByClassName("wrapper").style=blue;
+// let newColor=document.getElementsByClassName("color-me").style.backgroundColor="blue";
         return {
             ...state,
-            color: newColor
+            color: "blue"
         
 
         }

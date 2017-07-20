@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import autoBind from 'react-autobind';
 import { connect } from "react-redux";
 import { bindActionCreators} from "redux";
@@ -6,9 +6,19 @@ import * as actionCreators from "../actions/";
  import Button from '../component/button.js'
 
 class ButtonCon extends React.Component{
+    //     constructor() {
+    //     super();
+        
+    //     this.state = {
+    //      color: "red"
+    //     }
+  
+
+       
+    // };
     render(){
         return(
-          <Button colorChange={this.color}></Button>
+          <Button handleClick={this.props.changeColor} color={this.props.color}></Button>
         );
     }
 }

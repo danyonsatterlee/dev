@@ -1,17 +1,21 @@
 import React from 'react';
 
-
-
-class ButtonCon extends React.Component{
-    render(){
-        return(
+class Button extends React.Component {
+    render() {
+        return (
             <div className="wrapper">
-         <div className="color-me">
-             <button className="custon-btn">Color Time</button>
-         </div>
-         </div>
+                <div
+                   
+                    className="color-me"
+                    style={{
+                    backgroundColor: `${this.props.color}`
+                }}>
+                    <button onClick = {()=>{this.props.handleClick()
+                        }}className="custon-btn">Color Time</button>
+                </div>
+            </div>
         );
     }
 }
 
-export default ButtonCon;
+export default Button;

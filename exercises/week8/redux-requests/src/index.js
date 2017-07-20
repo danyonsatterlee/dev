@@ -10,7 +10,7 @@ import reducers from "./reducers";
 //make the store
 import './index.css';
 import ButtonCon from './container/button-container.js';
-
+const store = createStore(reducers);
 class App extends React.Component{
     render(){
         return(

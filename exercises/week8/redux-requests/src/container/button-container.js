@@ -18,7 +18,7 @@ class ButtonCon extends React.Component{
     // };
     render(){
         return(
-          <Button handleClick={this.props.loadColor} color={this.props.color}></Button>
+          <Button handleClick={this.props.loadColor} name={this.props.name} color={this.props.color}></Button>
         );
     }
 }

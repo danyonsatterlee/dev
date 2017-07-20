@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+   font-family: 'Bellefair', serif;
+  background-color:seashell;
+}
+
+
+.add{
+  margin-top: 1em;
+  text-align: center;
+  width:100%;
+}
+
+.add-color{
+  border-color: maroon;
+  border-right:1px;
+  border-left:0px;
+  border-top:0px;
+  border-bottom: 0px;
+  border-style:solid;
+  height:100vh;
+
+}
+
+.list{
+    border-color: black;
+  border-right:0px;
+  border-left:0px;
+  border-top:0px;
+  border-bottom: .5px;
+  border-style:solid;
+
+}
+
+.btn-custom{
+  width:100%;
+  margin-top:2em;
+}
+
+li{
+  list-style: none;
+}
+
+

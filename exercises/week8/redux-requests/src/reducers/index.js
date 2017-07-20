@@ -1,5 +1,6 @@
 let defaultState = {
-    color: "red"
+    color: "red",
+    name: "I am a color"
 }
 
 const mainReducer = (state = defaultState, action) => {
@@ -17,12 +18,26 @@ const mainReducer = (state = defaultState, action) => {
 
             }
         }
+
+    } else if (action.type === "COLOR_NAME") {
+        if (action.name !== undefined) {
+            return {
+                ...state,
+
+                name: action.name.name
+            }
         } else {
             return {
-                ...state
+                ...state,
+                name: "red"
             }
+        
         }
-
+    } else {
+        return {
+            ...state
+        }
     }
+}
 
     export default mainReducer;

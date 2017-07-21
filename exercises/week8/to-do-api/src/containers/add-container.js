@@ -1,5 +1,8 @@
 import React from "react";
 import autoBind from 'react-autobind';
+import {connect} from "react-redux";
+import {bindActionCreators} from "redux";
+import * as actionCreators from "../actions/"
 import Add from '../components/add-inputs.js'
 class AddCon extends React.Component{
         constructor() { 
@@ -8,7 +11,7 @@ class AddCon extends React.Component{
     this.state={
         title:"",
        price:"",
-       desc:  ""
+       description:  ""
 
     };
     autoBind(this);
@@ -24,10 +27,18 @@ handleChange(key,event){
         return(
             <div className="col-md-4 col-md-offset-2  add-color" >
                 <h1 className="text-center">Add to Your To-Do List</h1>
-<Add handleChange={this.handleChange} info={this.state}></Add>
+<Add handleAdd={this.props.addData} handleChange={this.handleChange} info={this.state}></Add>
 </div>
         );
     }
 }
 
-export default AddCon;
+const mapStateToProps = (state) => {
+  return state;
+}
+
+const mapDispatchersToProps = (dispatch) => {
+  return bindActionCreators(actionCreators, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchersToProps)(AddCon);

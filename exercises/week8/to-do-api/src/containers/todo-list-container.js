@@ -7,11 +7,12 @@ class ListCon extends React.Component{
     componentWillMount(){
         this.props.loadData();
     }
+
     render(){
         return(
             <div className="col-md-4 col-md-offset-1">
                 <h1 >To-Do List</h1>
-<ToDoList handleEdit={this.props.editData} items={this.props.items}></ToDoList>
+<ToDoList handleRemove ={this.props.removeData} handleEdit={this.props.editData} items={this.props.items}></ToDoList>
 </div>
         );
     }

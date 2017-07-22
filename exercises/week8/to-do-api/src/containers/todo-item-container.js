@@ -9,7 +9,8 @@ class ListItemCon extends React.Component{
     super(props);
    
     this.state={
-       ...this.props.item
+       ...this.props.item,
+       edit:false
 
     };
     autoBind(this);
@@ -21,10 +22,15 @@ handleChange(key,event){
     stateCopy[key]=event.target.value;
     this.setState(stateCopy);
 }
+    toggleEdit(){
+        this.setState({
+            edit: !this.state.edit
+        })
+    }
     render(){
         
         return(
-        <ToDo info={this.state} handleChange={this.handleChange}handleEdit={this.props.handleEdit} item={this.props.item}></ToDo>
+        <ToDo handleToggle={this.toggleEdit} info={this.state} handleRemove={this.props.handleRemove} handleChange={this.handleChange} handleEdit={this.props.handleEdit} item={this.props.item}></ToDo>
         );
     }
 }

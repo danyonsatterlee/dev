@@ -1,8 +1,10 @@
 import React from "react";
-import ToDoList from '../components/todo-list.js';
+
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import * as actionCreators from "../actions/"
+
+import ToDoList from '../components/todo-list.js';
 class ListCon extends React.Component{
     componentWillMount(){
         this.props.loadData();

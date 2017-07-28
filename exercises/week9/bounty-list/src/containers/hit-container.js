@@ -9,7 +9,8 @@ class HitCon extends React.Component{
     constructor(props){
         super(props);
         this.state={
-   ...this.props.hit
+   ...this.props.hit,
+   edit:false
         },
          autoBind(this);
     }
@@ -19,9 +20,15 @@ class HitCon extends React.Component{
             [key]:event.target.value
         })
     }
+
+     toggleEdit(){
+        this.setState({
+            edit: !this.state.edit
+        })
+    }
     render(){
         return(
-<Hit input={this.state}  handleSave={this.props.handleSave} handleChange={this.handleChange} hit={this.props.hit} handleRemove={this.props.handleRemove}/>
+<Hit input={this.state}  handleEdit={this.toggleEdit} handleSave={this.props.handleSave} handleChange={this.handleChange} hit={this.props.hit} handleRemove={this.props.handleRemove}/>
         );
     }
 }

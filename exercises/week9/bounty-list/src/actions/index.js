@@ -31,6 +31,20 @@ export function deleteData(id){
 }
 
 
+export function editData(id, data){
+   console.log("called");
+    return(dispatch)=>{
+
+        return axios.put(`http://localhost:8080/${id}`,data).then((response)=>{
+            console.log(response)
+dispatch(loadData())
+        }).catch((error) =>{
+            throw error
+        })
+    }
+}
+
+
 export function updateData(id,data){
     return(dispatch)=>{
         return axios.put(`http://localhost:8080/${id}`,data).then((response)=>{

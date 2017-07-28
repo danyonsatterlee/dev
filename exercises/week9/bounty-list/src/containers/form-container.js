@@ -3,11 +3,28 @@ import { connect } from "react-redux";
 import { bindActionCreators} from "redux";
 import * as actionCreators from "../actions/";
 import Form from "../components/form.js";
+import autoBind from "react-autobind";
 
 class FormCon extends React.Component{
+    constructor(){
+        super();
+        this.state={
+            name:"",
+            price:"",
+            location:"",
+            wanted:""
+
+        }; autoBind(this);
+    }
+
+    handleChange(key,event){
+        this.setState({
+            [key]:event.target.value
+        })
+    }
     render(){
         return(
-<Form/>
+<Form input={this.state} handleChange={this.handleChange} handleClick={this.props.addData}/>
         );
     }
 }

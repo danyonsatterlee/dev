@@ -1,5 +1,11 @@
 let defaultState = {
-    words: ""
+   hit:{
+       name:"",
+       location:"texas",
+       price:"40",
+       wanted:true
+   },
+   hits:[]
    
 }
 

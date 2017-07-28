@@ -5,9 +5,12 @@ import * as actionCreators from "../actions/";
 import HitList from "../components/hit-list.js";
 
 class HitListCon extends React.Component{
+    componentWillMount(){
+        this.props.loadData();
+    }
     render(){
         return(
-<HitList hits={[]}/>
+<HitList hits={this.props.hits}/>
         );
     }
 }

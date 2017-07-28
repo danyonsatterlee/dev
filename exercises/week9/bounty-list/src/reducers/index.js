@@ -1,5 +1,12 @@
 let defaultState = {
-    words: ""
+    hits:[
+          {
+            "name": "Edward Cullen",
+            "location": "tree house",
+            "price": "60",
+            "wanted": "false"
+        }
+    ]
    
 }
 
@@ -9,7 +16,7 @@ const mainReducer = (state = defaultState, action) => {
         
             return {
                 ...state,
-                words: action.words
+               hits: action.data
             }
     }
     else{

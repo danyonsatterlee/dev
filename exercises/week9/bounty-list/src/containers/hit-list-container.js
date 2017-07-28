@@ -10,7 +10,7 @@ class HitListCon extends React.Component{
     }
     render(){
         return(
-<HitList hits={this.props.hits}/>
+<HitList hits={this.props.hits} handleSave={this.props.updateData} handleRemove={this.props.deleteData}/>
         );
     }
 }

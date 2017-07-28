@@ -20,6 +20,27 @@ export function addData(data){
     }
 }
 
+export function deleteData(id){
+    return(dispatch)=>{
+        return axios.delete(`http://localhost:8080/${id}`).then((response)=>{
+            dispatch(loadData());
+        }).catch((error)=>{
+            throw error;
+        });
+    }
+}
+
+
+export function updateData(id,data){
+    return(dispatch)=>{
+        return axios.put(`http://localhost:8080/${id}`,data).then((response)=>{
+            dispatch(loadData());
+        }).catch((error)=>{
+            throw error;
+        });
+    }
+}
+
 export function setData(data){
     return{
     type: "SET_DATA",

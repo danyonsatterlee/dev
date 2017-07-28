@@ -1,13 +1,27 @@
 import React from "react";
 import { connect } from "react-redux";
+import autoBind from "react-autobind";
 import { bindActionCreators} from "redux";
 import * as actionCreators from "../actions/";
 import Hit from "../components/hit.js";
 
 class HitCon extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+   ...this.props.hit
+        },
+         autoBind(this);
+    }
+
+    handleChange(key,event){
+        this.setState({
+            [key]:event.target.value
+        })
+    }
     render(){
         return(
-<Hit hit={this.props.hit}/>
+<Hit input={this.state}  handleSave={this.props.handleSave} handleChange={this.handleChange} hit={this.props.hit} handleRemove={this.props.handleRemove}/>
         );
     }
 }

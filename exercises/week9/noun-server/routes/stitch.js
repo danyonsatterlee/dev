@@ -6,9 +6,9 @@ let stitchPattern = [
     {
         id: uuid(),
         name: "broken rib with twist",
-        multiples: "(multiple of 4 sts)",
+       
         category: "knit and purl",
-        special: "RT (right twist) K2tog but do not drop from LH needle, knit first st again and d" +
+        notes: "RT (right twist) K2tog but do not drop from LH needle, knit first st again and d" +
             "rop both sts from LH needle.",
 
         pattern: {
@@ -26,7 +26,8 @@ let stitchPattern = [
             row12: "",
             row13: "",
             row14: "",
-            row15: ""
+            row15: "",
+            row16: ""
         }
 
     },
@@ -53,7 +54,8 @@ let stitchPattern = [
             row12: "",
             row13: "",
             row14: "",
-            row15: ""
+            row15: "",
+            row16: ""
         }
 
     }

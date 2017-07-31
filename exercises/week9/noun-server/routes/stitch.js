@@ -6,10 +6,10 @@ let stitchPattern = [
     {
         id: uuid(),
         name: "broken rib with twist",
-       
+
         category: "knit and purl",
         notes: "RT (right twist) K2tog but do not drop from LH needle, knit first st again and d" +
-            "rop both sts from LH needle.",
+                "rop both sts from LH needle.",
 
         pattern: {
             row1: "Row 1 (RS) *K2, p2; rep from * to end.",
@@ -29,15 +29,13 @@ let stitchPattern = [
             row15: "",
             row16: ""
         }
-
-    },
-    {
+    }, {
         id: uuid(),
         name: "broken rib with twist",
         multiples: "(multiple of 4 sts)",
         category: "cable",
         special: "RT (right twist) K2tog but do not drop from LH needle, knit first st again and d" +
-            "rop both sts from LH needle.",
+                "rop both sts from LH needle.",
 
         pattern: {
             row1: "Row 1 (RS) *K2, p2; rep from * to end.",
@@ -57,22 +55,22 @@ let stitchPattern = [
             row15: "",
             row16: ""
         }
-
     }
 ];
 stitchRouter.get("/", (req, res) => {
-    console.log(req.query);
+
 
     let search = stitchPattern.filter((item) => {
-      
+
         for (let key in req.query) {
-        
+
             if (req.query[key] != item[key]) {
                 return false;
 
-            } 
+            }
 
-        } return true;
+        }
+        return true;
     });
     res
         .status(200)
@@ -95,7 +93,7 @@ stitchRouter.get("/:id", (req, res) => {
 stitchRouter.delete("/:id", (req, res) => {
     // loop through the data array to find the object which has an ._id that matches
     // req.params.id and return that object
-    for (let i = 0; i < stitchPattern; i++) {
+    for (let i = 0; i < stitchPattern.length; i++) {
         if (stitchPattern[i].id === req.params.id) {
             stitchPattern.splice(i, 1);
             res.send({"message": "DELETE SUCCESSFUL"})
@@ -107,17 +105,32 @@ stitchRouter.delete("/:id", (req, res) => {
 });
 
 stitchRouter.put("/:id", (req, res) => {
-    for (let i = 0; i < stitchPattern; i++) {
+    console.log(req.params.id)
+
+    for (let i = 0; i < stitchPattern.length; i++) {
+        console.log(i);
         if (stitchPattern[i].id === req.params.id) {
+            console.log("id matches")
             for (let key in req.body) {
+             
                 if (stitchPattern[i].hasOwnProperty(key)) {
-                    stitchPattern[i][key] = req.body[key];
+                    if (key === "pattern") {
+                         console.log(stitchPattern[i]);
+                        for (let key in req.body.pattern.length) {
+                          
+                            stitchPattern[i].pattern[key] = req.body.pattern[key]
+                        }
+                    } else {
+                        stitchPattern[i][key] = req.body[key];
+                    }
+
                 }
             };
-        }
-        return res
+                return res
             .status(200)
             .send({message: "item updated"})
+        }
+    
     }
     return res
         .status(404)
@@ -134,4 +147,4 @@ stitchRouter.post("/", (req, res) => {
 
 });
 
-module.exports=stitchRouter;
+module.exports = stitchRouter;

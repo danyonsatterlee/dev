@@ -8,7 +8,7 @@ class StitchList extends React.Component {
             .stitch
             .map((item, index) => {
               
-                return <StitchCon handleSave={this.props.handleSave} stitch={item} handleRemove={this.props.handleRemove}></StitchCon>
+                return <StitchCon handleSave={this.props.handleSave} key={index + item.name} stitch={item} handleRemove={this.props.handleRemove}></StitchCon>
             })
     }
     render() {

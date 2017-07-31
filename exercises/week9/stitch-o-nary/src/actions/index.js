@@ -2,8 +2,10 @@ import axios from "axios";
 
 export function loadData(){
     return(dispatch)=>{
-        return axios.get("http://localhost:8080/").then((response)=>{
+        return axios.get("http://localhost:8080/stitches").then((response)=>{
+                console.log(response.data)
             dispatch(setData(response.data.data))
+          
         }).catch((error)=>{
             throw error;
         })
@@ -14,6 +16,7 @@ export function addData(data){
     return(dispatch)=>{
         return axios.post("http://localhost:8080/",data).then((response)=>{
             dispatch(loadData());
+          
         }).catch((error)=>{
             throw error;
         });

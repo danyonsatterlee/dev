@@ -1,19 +1,21 @@
 import React from "react";
 import StitchCon from "../containers/stitch-container.js";
 class StitchList extends React.Component {
-    // genStith() {
-    //     return this
-    //         .props
-    //         .hits
-    //         .map((item, index) => {
-    //             return <StitchCon></StitchCon>
-    //         })
-    // }
+    genStitch() {
+
+        return this
+            .props
+            .stitch
+            .map((item, index) => {
+              
+                return <StitchCon handleSave={this.props.handleSave} stitch={item} handleRemove={this.props.handleRemove}></StitchCon>
+            })
+    }
     render() {
         return (
             <div>
-                <StitchCon></StitchCon>
-                {/*{this.genStitch()}*/}
+                
+                {this.genStitch()}
             </div>
         );
     }

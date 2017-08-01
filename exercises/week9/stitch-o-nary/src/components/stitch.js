@@ -20,18 +20,22 @@ class Stitch extends React.Component {
                         .handleChange("name", event);
                 }}/>
                 <p>{this.props.stitch.category}</p>
-                <input
-                    style={{
+                <div className="text-center" style={{
                     display: this.props.input.edit
                         ? "inherit"
                         : "none"
-                }}
-                    value={this.props.input.category}
-                    onChange={(event) => {
-                    this
-                        .props
-                        .handleChange("category", event);
-                }}/>
+                }}>
+
+                                <select value={this.props.input.category} onChange={(event)=>{
+                    this.props.handleChange("category",event)}}className="form-control center-block">
+                                    <option >knit and purl</option>
+                                    <option >cable</option>
+                                    <option >lace</option>
+                                    <option >rib</option>
+                                </select>
+                         
+                        </div>
+       
 
                 <p>{this.props.stitch.notes}</p>
 
@@ -75,7 +79,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row2", event);
+                        .handlePattern("row2", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row3}
@@ -90,7 +94,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row3", event);
+                        .handlePattern("row3", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row4}
@@ -105,7 +109,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row4", event);
+                        .handlePattern("row4", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row5}
@@ -120,7 +124,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row5", event);
+                        .handlePattern("row5", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row6}
@@ -135,7 +139,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row6", event);
+                        .handlePattern("row6", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row7}
@@ -150,7 +154,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row7", event);
+                        .handlePattern("row7", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row8}
@@ -165,7 +169,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row8", event);
+                        .handlePattern("row8", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row9}
@@ -180,7 +184,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row9", event);
+                        .handlePattern("row9", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row10}
@@ -195,7 +199,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row10", event);
+                        .handlePattern("row10", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row11}
@@ -210,7 +214,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row11", event);
+                        .handlePattern("row11", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row12}
@@ -225,7 +229,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row12", event);
+                        .handlePattern("row12", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row13}
@@ -240,7 +244,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row13", event);
+                        .handlePattern("row13", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row14}
@@ -255,7 +259,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row14", event);
+                        .handlePattern("row14", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row15}
@@ -270,7 +274,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row15", event);
+                        .handlePattern("row15", event);
                 }}/>
                 <p>
                     {this.props.stitch.pattern.row16}
@@ -285,7 +289,7 @@ class Stitch extends React.Component {
                     onChange={(event) => {
                     this
                         .props
-                        .handleChange("row16", event);
+                        .handlePattern("row16", event);
                 }}/>
                 <button
                     onClick={() => {

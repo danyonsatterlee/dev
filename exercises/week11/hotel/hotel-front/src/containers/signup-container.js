@@ -21,9 +21,17 @@ handleChange(key,event){
         [key]:event.target.value
     });
 }
+handleSubmit(username,password){
+    this.props.signup(username,password);
+    this.props.toggleModal("isShowingSignup");
+    this.setState({
+        username:"",
+        password:""
+    })
+}
     render() {
         return (
-       <Signup input={this.state} handleChange={this.handleChange} handleSubmit={this.props.signup}></Signup>
+       <Signup input={this.state} handleChange={this.handleChange} handleSubmit={this.handleSubmit}></Signup>
         );
     }
 }

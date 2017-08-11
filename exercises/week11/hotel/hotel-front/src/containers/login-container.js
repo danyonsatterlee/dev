@@ -21,9 +21,17 @@ handleChange(key,event){
         [key]:event.target.value
     });
 }
+handleSubmit(username,password){
+    this.props.login(username,password);
+    this.props.toggleModal("isShowingLogin");
+    this.setState({
+        username:"",
+        password:""
+    })
+}
     render() {
         return (
-       <Login input={this.state} handleChange={this.handleChange} handleSubmit={this.props.login}></Login>
+       <Login input={this.state} handleChange={this.handleChange} handleSubmit={this.handleSubmit}></Login>
         );
     }
 }

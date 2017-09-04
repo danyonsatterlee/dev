@@ -45,6 +45,7 @@ export function login(username, password) {
             .post("http://localhost:8080/auth/login", {username, password})
             .then((response) => {
                 dispatch(setToken(response.data.token))
+                 alert("user has been logged in")
             })
             .catch((err) => {
                 alert("Username or password was incorrect")

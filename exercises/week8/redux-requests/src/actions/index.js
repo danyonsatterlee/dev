@@ -5,7 +5,7 @@ export function loadColor() {
             .get("http://www.colr.org/json/color/random")
             .then((response) => {
                 console.log(response.data)
-                dispatch(changeColor("#" + response.data.new_color));
+                dispatch(changeColor("#" + response.data.colors[0].hex));
                 dispatch(changeColorName(response.data.colors[0].tags[0]));
 
             })

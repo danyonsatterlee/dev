@@ -11,9 +11,7 @@ hotelRouter.get("/events", (req, res) => {
             "message": "Here are the events at the hotel",
             data: [
                 {
-                    checkIn: "11:00 AM",
-                    checkOut: "4:00 PM",
-                    title: "Conference",
+                   
                     description: "Tech Conference World"
                 }, {
                     checkIn: "6:00 PM",

@@ -1,0 +1,7 @@
+#hangman{
+    border:1px;
+    border-color: black;
+    border-style: solid;
+    height: 50vh;
+    width:50%;
+}

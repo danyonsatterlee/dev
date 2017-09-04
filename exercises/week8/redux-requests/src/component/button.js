@@ -10,7 +10,7 @@ class Button extends React.Component {
                     style={{
                     backgroundColor: `${this.props.color}`
                    
-                }}> <div><p>{this.props.name}</p></div>
+                }}> <div></div>
                     <button onClick = {()=>{this.props.handleClick()
                         }}className="custon-btn">Color Time</button>
                 </div>
@@ -20,3 +20,5 @@ class Button extends React.Component {
 }
 
 export default Button;
+
+{/*<p>{this.props.name}</p>*/}

@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('/img/mexico.jpg') fixed center;
+}
+
+.header{
+  text-align: center;
+  margin-top:10vh;
+  min-height:30vh;
+  background-color: rgba(86.3%, 86.3%, 86.3%, 0.5);
+ 
+}
+
+.summer-head{
+  padding-top:10vh;
+  color: rgba(241, 0, 0, 0.87);
+  font-family: 'Shrikhand', cursive;
+  font-size: 4em;
+}
+
+.sub-head{
+  font-family: 'Roboto', sans-serif;
+  color:white;
+}
+
+.beer{
+  background-color:rgb(0, 208, 241);
+  min-height:120px;
+  min-width:120px;
+  text-align: center;
+  margin: 10px;
+}
+
+.beer-head{
+  font-family: 'Shrikhand', cursive;
+  color:white;
+  font-size: 1.5em;
+
+}
+
+.vote{
+  display: inline !important;
+  color:white;
+}
+.add-beer{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.add-beer :hover{
+  color:black;
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 10px;
+  padding-right:10px;
+}

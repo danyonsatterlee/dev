@@ -6,8 +6,11 @@ const myApi = axios.create({
   withCredentials: true,
   transformRequest: [(data) => JSON.stringify(data.data)],
   headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json',
+     headers: {
+    "Access-Control-Allow-Origin": "*",
+    
+  }
+
   }
 });
 export function loadData(){
